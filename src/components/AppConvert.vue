@@ -20,7 +20,7 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="form-group">
-            <label for="tengo">Tengo</label>
+            <label for="tengo">Tengo esta moneda..</label>
             <select
               class="form-control form-control-lg"
               id="tengo"
@@ -35,7 +35,7 @@
         </div>
         <div class="col-lg-6">
           <div class="form-group">
-            <label for="quiero">Quiero</label>
+            <label for="quiero">Y quiero convertirla a esta moneda...</label>
             <select
               class="form-control form-control-lg"
               id="quiero"
@@ -81,52 +81,52 @@ export default {
             this.total = this.cantidad;
           }
           if (this.quiero === "EUR") {
-            this.total = this.cantidad * 0.84;
+            this.total = this.cantidad * 372.76;
           }
           if (this.quiero === "LIBRA") {
-            this.total = this.cantidad * 0.75;
+            this.total = this.cantidad * 429.65;
           }
           if (this.quiero === "ARS") {
-            this.total = this.cantidad * 125; 
+            this.total = this.cantidad * 347.19; 
           }
           break;
         case "EUR":
           if (this.quiero === "USD") {
-            this.total = this.cantidad * 1.19;
+            this.total = this.cantidad * 347.19;
           }
           if (this.quiero === "EUR") {
             this.total = this.cantidad;
           }
           if (this.quiero === "LIBRA") {
-            this.total = this.cantidad * 0.89;
+            this.total = this.cantidad * 429.65;
           }
           if (this.quiero === "ARS") {
-            this.total = this.cantidad * 150; 
+            this.total = this.cantidad * 372.76; 
           }
           break;
         case "LIBRA":
           if (this.quiero === "USD") {
-            this.total = this.cantidad * 1.33;
+            this.total = this.cantidad * 347.19;
           }
           if (this.quiero === "EUR") {
-            this.total = this.cantidad * 1.12;
+            this.total = this.cantidad * 372.76;
           }
           if (this.quiero === "LIBRA") {
             this.total = this.cantidad;
           }
           if (this.quiero === "ARS") {
-            this.total = this.cantidad * 135; 
+            this.total = this.cantidad * 0.0029; 
           }
           break;
         case "ARS":
           if (this.quiero === "USD") {
-            this.total = this.cantidad / 125; 
+            this.total = this.cantidad * 0.0029; 
           }
           if (this.quiero === "EUR") {
-            this.total = this.cantidad / 150; 
+            this.total = this.cantidad / 372,76; 
           }
           if (this.quiero === "LIBRA") {
-            this.total = this.cantidad / 135; 
+            this.total = this.cantidad / 347.19; 
           }
           if (this.quiero === "ARS") {
             this.total = this.cantidad;
